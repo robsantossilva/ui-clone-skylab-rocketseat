@@ -1,0 +1,118 @@
+.module-content {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    background: rgb(40, 39, 47);
+    padding: 12px 16px;
+}
+
+.module-content .resume {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.module-content > svg {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.module-content .desc {
+    margin: 0px 20px;
+}
+.module-content .desc span {
+    display: block;
+}
+.module-content .desc span:first-child {
+    font-size: 16px;
+    font-weight: bold;
+}
+.module-content .desc span:last-child {
+    font-size: 12px;
+    color: rgb(135, 134, 139);
+    margin-top: 2px;
+}
+
+.module-content + ul + div {
+    margin-top: 10px;
+}
+
+.module-topics {
+    position: relative;
+    margin: 30px;
+}
+
+.module-topics .topic{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    color: rgb(255, 255, 255);
+}
+
+.module-topics .topic + li {
+    margin-top: 20px;
+}
+
+.module-topics .topic button {
+    position: relative;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    margin-right: 30px;
+    flex-shrink: 0;
+    z-index: 2;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 50%;
+    transition: all 0.2s ease 0s;
+    background: rgb(68, 67, 75);
+}
+
+.module-topics .topic-done button {
+    background: rgb(4, 211, 97);
+}
+.module-topics .topic-current button {
+    background: rgb(113, 89, 193);
+}
+
+.module-topics .topic a {
+    color: rgb(255, 255, 255);
+}
+.module-topics .topic-done a {
+    color: rgb(4, 211, 97);
+}
+.module-topics .topic-current a {
+    color: rgb(113, 89, 193);
+}
+
+
+
+.module-topics .topic::before, 
+.module-topics .topic::after {
+    content: "";
+    left: 4px;
+    width: 2px;
+    top: 50%;
+    height: calc(100% + 5px);
+    position: absolute;
+    background: rgb(40, 39, 44);
+}
+
+.module-topics .topic + li::before {
+    top: auto;
+    bottom: 50%;
+}
+
+.module-topics .topic:last-child::after {
+    height: 0;
+}

@@ -1,0 +1,93 @@
+.header {
+    background: rgb(17, 17, 22);
+    height: 80px;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 0 30px;
+    justify-content: center;
+    display: flex;
+    z-index: 9999;
+}
+
+.header-container {
+    width: 100%;
+    padding: 12px 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+.header-box {
+    /*background-color: rgb(100, 100, 100);*/
+    align-items: center;
+    display: flex;
+}
+
+.header-box .alert {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-right: 14px;
+}
+
+.header-box .alert button {
+    width: 46px;
+    height: 46px;
+    background: rgb(25, 24, 31);
+    border-radius: 5px;
+
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.header-box .go-back {
+    display: flex;
+    margin-left: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 3px;
+    transition: background 0.2s ease 0s;
+}
+
+.profile {
+    display: flex;
+    text-align: right;
+    padding: 12px 10px;
+}
+
+.profile div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 18px;
+    align-self: center;
+}
+
+.profile div span:first-child {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.profile div span:last-child {
+    color: rgb(135, 134, 139);
+    font-size: 12px;
+}
+
+.profile img {
+    width: 56px;
+    height: 56px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(113, 89, 193);
+    border-image: initial;
+    border-radius: 50%;
+}

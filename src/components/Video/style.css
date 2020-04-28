@@ -1,0 +1,114 @@
+.video {
+    width: 100%;
+    min-width: 0px;
+    flex: 1 1 0%;
+}
+.video header {
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.video header .title strong {
+    font-size: 20px;
+    color: rgb(113, 89, 193);
+    display: block;
+}
+.video header .title span {
+    padding: 0px;
+    margin: 6px 0px 0px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(135, 134, 139);
+    display: block;
+}
+.video header .options {
+    display: flex;
+} 
+.video header .options :first-child {
+    margin: 0;
+}
+.video header .options > * {
+    margin-left: 1rem;
+}
+.video header .options .hide-nav {
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(135, 134, 139);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0.35rem 0.65rem;
+    background: rgb(25, 24, 31);
+    border-radius: 5px;
+}
+.video header .options .hide-nav p {
+    margin-left: 0.5rem;
+}
+.video header .options .hide-nav svg {
+    color: rgb(113, 89, 193);
+}
+.video header .options .change-player {
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(135, 134, 139);
+    min-width: 60px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 0.35rem 0.65rem;
+    background: rgb(25, 24, 31);
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+}
+.video header .options .change-player svg {
+    color: rgb(113, 89, 193);
+    margin-left: 8px;
+}
+.video header .options .change-player ul {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    left: 0px;
+    top: 32px;
+    z-index: 999;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px 0px 5px 5px;
+    background: rgb(25, 24, 31);
+    transition: opacity 0.2s ease-out 0s;
+    border-width: 0px 1px 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+}
+.video header .options .change-player ul li {
+    width: 100%;
+    padding: 0.35rem 0.65rem;
+}
+.video .vimeo-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+@media (max-width: 1080px){
+    .video header .options .hide-nav p {
+        display: none;
+    }
+}

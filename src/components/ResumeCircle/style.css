@@ -1,0 +1,53 @@
+.circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/*.circle circle {
+    stroke-width: 2;
+    stroke-dasharray: 113.097, 113.097;
+    stroke-dashoffset: 0;
+    stroke: rgb(4, 211, 97);
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke 0.3s ease 0s, stroke-dashoffset 0.45s ease 0s;
+}*/
+
+.circle + svg {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+}
+
+.circle + svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    /*
+    transform: translate(-50%, -150%);
+    opacity: 0;
+    visibility: hidden;
+    */
+    transition: all 0.4s ease 0s;
+}
+
+.circle ~ span {
+    display: none;
+}
+
+.circle ~ span {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    z-index: 2;
+    font-size: 14px;
+}
